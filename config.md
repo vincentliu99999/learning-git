@@ -26,3 +26,34 @@ git config --list
 
 1. 透過指令 `git config`
 1. 直接修改 `~/.gitconfig`
+
+```log
+[user]
+    name = Vincent Liu
+    email = vincentliu@abcde.com
+[core]
+    editor = vim
+    ignorecase = false
+[push]
+    default = simple
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    log = auto
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'
+```
+
+## 別名
+
+當你熟練或懶惰時的好朋友
+
+```sh
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.aa add --all
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'"
+```
