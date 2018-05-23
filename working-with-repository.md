@@ -18,6 +18,7 @@ echo "console.log('hello, git');" > hello.js
 vim hello.js
 git add hello.js
 git commit --amend -m "add git-tutorial.txt and hello.js"
+git commit --amend --no-edit # message 同上一次
 ```
 
 ## 新增空目錄
@@ -30,4 +31,17 @@ cd upload_image
 touch .gitkeep
 git add .
 git commit -m "add upload image folder"
+```
+
+## 刪除檔案
+
+```sh
+git rm <file-name>
+git rm <file-name> --cached
+```
+
+## 重新命名
+
+```sh
+git mv <file-name-old> <file-name-new>
 ```
